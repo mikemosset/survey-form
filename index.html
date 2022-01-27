@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="title">Coding Survey</h1>
+<p id="description">Thank you for taking the time to complete the survey.</p>
+<form id="survey-form">
+  <label for="name" id="name-label">Name</label>
+  <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+  <label for="email" id="email-label">Enter your email</label>
+  <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+  <label for="number" id="number-label">How many years have you been a coder?</label>
+  <input type="number" id="number" name="number" min="0" max="150" placeholder="0-150"><br><br>
+
+  <label for="dropdown">Do you have a favorite IDE or editor?</label><br>
+  <select id="dropdown">
+    <option value="visual_code">Visual Studio Code</option>
+    <option value="visual_studio">Visual Studio IDE</option>
+    <option value="eclipse">Eclipse</option>
+    <option value="jetbrains">Jetbrains IDE's</option>
+    <option value="other">Other IDE's or Editor's not listed</option>
+  </select><br><br>
+
+  <label>Do you have a favorite programming language?</label><br>
+  <input type="radio" id="python" name="fav_language" value="Python">
+  <label for="python">Python</label><br>
+  <input type="radio" id="java" name="fav_language" value="Java">
+  <label for="java">Java</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label><br>
+  <input type="radio" id="other" name="fav_language" value="Other">
+  <label for="other">Other</label><br><br>
+
+  <label>What are you? Check all that apply</label><br>
+  <input type="checkbox" id="hobby" name="hobby" value="hobby">
+  <label for="hobby"> Building websites and software is my hobby</label><br>
+  <input type="checkbox" id="student" name="student" value="Student">
+  <label for="student"> I am a Student of Software Development</label><br>
+  <input type="checkbox" id="job" name="job" value="Job">
+  <label for="job"> I have a job in Software Development</label><br>
+  <input type="checkbox" id="business" name="business" value="Business">
+  <label for="business"> I own a business in Software Development</label><br><br>
+
+  <label for="message">Comments or questions can be left in the text area below:</label><br><br>
+  <textarea name="message" id="message" rows="10" cols="30"></textarea><br><br>
+
+  <input type="submit" value="Submit" id="submit">
+
+</form>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
